@@ -1,7 +1,4 @@
-# caddy-luck DEMO
-
-# Gulp 3 Minimal Starter
-
+# caddy-luck TEST DEMO
 
 ## Setup
 
