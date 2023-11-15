@@ -1,12 +1,7 @@
 @import '../../node_modules/swiper/swiper.scss';
-// @import '../../node_modules/swiper/modules/navigation/navigation.scss';
 @import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
 @import '../../node_modules/swiper/modules/pagination/pagination.scss';
-// @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
-// @import '../../node_modules/nouislider/dist/nouislider.min';
-// @import '../../node_modules/aos/src/sass/aos.scss';
-// @import '../../node_modules/choices.js/src/styles/choices.scss';
-// "./lib/tips";
+@import "./lib/tips";
 
 @tailwind base;
 @tailwind components;
@@ -14,10 +9,9 @@
 
 @layer base {
   body {
-    @apply text-gray;
+    @apply text-gray font-medium;
   }
 }
-
 
 @layer components {
    .swiper-pagination-bullet {
