@@ -1,8 +1,7 @@
-/* Import lib styles  */
-// @import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/swiper.scss';
 // @import '../../node_modules/swiper/modules/navigation/navigation.scss';
-// @import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
-// @import '../../node_modules/swiper/modules/pagination/pagination.scss';
+@import '../../node_modules/swiper/modules/autoplay/autoplay.scss';
+@import '../../node_modules/swiper/modules/pagination/pagination.scss';
 // @import '../../node_modules/swiper/modules/scrollbar/scrollbar.scss';
 // @import '../../node_modules/nouislider/dist/nouislider.min';
 // @import '../../node_modules/aos/src/sass/aos.scss';
@@ -13,4 +12,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  body {
+    @apply text-gray;
+  }
+}
 
+
+@layer components {
+   .swiper-pagination-bullet {
+      @apply w-full rounded-lg transition-all duration-200 bg-white opacity-100 h-[0.3rem];
+      &.swiper-pagination-bullet-active  {
+         @apply bg-primary;
+      }
+   }
+}

@@ -1,18 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uk">
   @@include('components/head.html', { 'title': 'Головна' })
   <body>
-    <div class="wrapper">
+    <div class="relative flex min-h-screen flex-col overflow-hidden">
       @@include('components/header.html', { })
-      <main>
-        <section class=""></section>
+      <main class="grow">
+        <section class="py-20">
+          <div class="container grid grid-cols-3 gap-6 xl:grid-cols-1">
+            <div class="overflow-hidden rounded-2xl">
+              <!-- card-header -->
+              <div class="flex flex-wrap justify-between gap-4 bg-primary-dark p-4 xl:p-6">
+                <p class="text-base font-medium text-white xl:text-xl xl:font-bold">Opel Insignia - 2.0 Diesel Aut. Business Innovation / 2017</p>
+                <div class="flex items-center gap-2">
+                  <svg class="h-6 w-6">
+                    <use href="./sprites/sprite.svg#icon-clock"></use>
+                  </svg>
+                  <span class="text-base font-medium text-white xl:text-xl">00:08:15</span>
+                </div>
+              </div>
+
+              <!-- card-body -->
+              <div class="p-4">
+                <!-- card-body-header -->
+                <div class="mb-6 flex flex-wrap items-center justify-between gap-4">
+                  <div class="mr-auto flex flex-wrap items-center gap-y-4">
+                    <div class="mr-6 gap-2 xl:flex xl:items-center">
+                      <div class="mr-2 flex flex-row-reverse items-center gap-2 max-xl:float-left xl:mr-0 xl:flex-row">
+                        <span class="whitespace-nowrap text-primary">№ 2550</span>
+                        <svg class="h-6 w-6 shrink-0">
+                          <use href="./sprites/sprite.svg#icon-info"></use>
+                        </svg>
+                      </div>
+                      <p>15.05.2023 - PL - OPEN AUCTION segment B&C+LCV</p>
+                    </div>
+                    <div class="flex items-center gap-x-4 xl:gap-x-6 gap-y-1">
+                      <div class="flex items-center gap-2">
+                        <svg class="h-6 w-6 shrink-0">
+                          <use href="./sprites/sprite.svg#icon-location"></use>
+                        </svg>
+                        <span class="text-sm xl:text-base">Київ</span>
+                      </div>
+                      <div class="flex items-center gap-2">
+                        <svg class="h-6 w-6 shrink-0">
+                          <use href="./sprites/sprite.svg#icon-sample-cal"></use>
+                        </svg>
+                        <span class="text-sm xl:text-base">31.07.2017</span>
+                      </div>
+                      <a href="#" class="flex items-center gap-1 xl:gap-2">
+                        <span class="text-primary text-sm xl:text-base whitespace-nowrap">Сайт донор</span>
+                        <svg class="h-4 w-4 shrink-0">
+                          <use href="./sprites/sprite.svg#icon-arrow-out"></use>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-6">
+                    <span class="text-primary">ID 544892</span>
+                    <div class="flex items-center gap-2">
+                      <svg class="h-6 w-6 shrink-0">
+                        <use href="./sprites/sprite.svg#icon-user"></use>
+                      </svg>
+                      <span class="text-primary">User722</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card-body-main -->
+                <div class="grid grid-cols-1 gap-6 xl:grid-cols-[40%_1fr_1fr]">
+                  <div class="grow overflow-hidden rounded-xl">
+                    <div class="card-slider relative h-full w-full overflow-hidden">
+                      <div class="absolute right-4 top-4 z-10 flex gap-2">
+                        <button class="grid h-[2.8rem] w-[2.8rem] place-content-center rounded-md bg-white/70 backdrop-blur-md" type="button">
+                          <svg class="h-6 w-6">
+                            <use href="./sprites/sprite.svg#icon-download"></use>
+                          </svg>
+                        </button>
+                        <button class="grid h-[2.8rem] w-[2.8rem] place-content-center rounded-md bg-white/70 backdrop-blur-md" type="button">
+                          <svg class="h-6 w-6">
+                            <use href="./sprites/sprite.svg#icon-arrow-share"></use>
+                          </svg>
+                        </button>
+                        <button class="grid h-[2.8rem] w-[2.8rem] place-content-center rounded-md bg-white/70 backdrop-blur-md" type="button">
+                          <svg class="h-6 w-6">
+                            <use href="./sprites/sprite.svg#icon-favorites"></use>
+                          </svg>
+                        </button>
+                      </div>
+                      <div class="card-slider-wrapper flex h-full w-full">
+                        <div class="card-slider-slide shrink-0">
+                          <img src="./img/1.webp" alt="car1" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="card-slider-slide shrink-0">
+                          <img src="./img/2.webp" alt="car1" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="card-slider-slide shrink-0">
+                          <img src="./img/1.webp" alt="car1" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="card-slider-slide shrink-0">
+                          <img src="./img/2.webp" alt="car1" class="h-full w-full object-cover" />
+                        </div>
+                        <div class="card-slider-slide shrink-0">
+                          <img src="./img/1.webp" alt="car1" class="h-full w-full object-cover" />
+                        </div>
+                      </div>
+                      <div class="pagination absolute !bottom-[3px] flex w-full justify-center"></div>
+                    </div>
+                  </div>
+
+                  <div class="flex h-full grow flex-col">
+                    <div class="grid grow grid-cols-2 justify-between gap-6 rounded-2xl bg-gray-100 p-6">
+                      <dl>
+                        <dt class="mb-2 text-gray-200">Тип палива</dt>
+                        <dd class="flex items-center gap-2">
+                          <svg class="h-6 w-6 shrink-0">
+                            <use href="./sprites/sprite.svg#icon-fuel"></use>
+                          </svg>
+                          <span>Diesel</span>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt class="mb-2 text-gray-200">Рік випуску</dt>
+                        <dd class="flex items-center gap-2">
+                          <svg class="h-6 w-6 shrink-0">
+                            <use href="./sprites/sprite.svg#icon-year-cal"></use>
+                          </svg>
+                          <span>04.10.2018</span>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt class="mb-2 text-gray-200">Об’єм двигуна</dt>
+                        <dd class="flex items-center gap-2">
+                          <svg class="h-6 w-6 shrink-0">
+                            <use href="./sprites/sprite.svg#icon-capacity"></use>
+                          </svg>
+                          <span>1956 см3</span>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt class="mb-2 text-gray-200">КПП</dt>
+                        <dd class="flex items-center gap-2">
+                          <svg class="h-6 w-6 shrink-0">
+                            <use href="./sprites/sprite.svg#icon-kpp"></use>
+                          </svg>
+                          <span>Mechanic</span>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt class="mb-2 text-gray-200">Потужність</dt>
+                        <dd class="flex items-center gap-2">
+                          <svg class="h-6 w-6 shrink-0">
+                            <use href="./sprites/sprite.svg#icon-power"></use>
+                          </svg>
+                          <span>Mechanic</span>
+                        </dd>
+                      </dl>
+                      <dl>
+                        <dt class="mb-2 text-gray-200">Пробіг</dt>
+                        <dd class="flex items-center gap-2">
+                          <svg class="h-6 w-6 shrink-0">
+                            <use href="./sprites/sprite.svg#icon-mileage"></use>
+                          </svg>
+                          <span>211886 km</span>
+                        </dd>
+                      </dl>
+                    </div>
+                    <form action="#" class="mt-6 flex grow flex-col">
+                      <input type="text" inputmode="numeric" placeholder="від 20300 EUR" class="mb-2 w-full rounded-2xl border-2 border-gray-100 px-6 py-4 text-gray-200 placeholder:font-medium" />
+                      <button class="mt-auto w-full rounded-xl bg-primary px-6 py-4 text-lg font-medium text-white" type="submit">Розмістити ставку</button>
+                    </form>
+                  </div>
+
+                  <div class="flex grow flex-col items-center gap-6">
+                    <select
+                      style="background: url(&quot;./img/arrow-simple.svg&quot;) calc(100% - 20px) center / 23px no-repeat"
+                      class="w-full max-w-[16rem] appearance-none rounded-2xl border border-gray-200 bg-white px-6 py-4 focus:border focus:border-primary focus:outline-none">
+                      <option value="placeholder" placeholder>Показати розрахунки</option>
+                      <option value="option1">option_1</option>
+                      <option value="option2">option_2</option>
+                      <option value="option3">option_3</option>
+                    </select>
+
+                    <div>
+                      <dl>
+                        <div class="mb-6 flex justify-between gap-4">
+                          <dt class="font-medium text-gray-200">Розміщена ставка</dt>
+                          <dd class="text-3xl font-semibold text-primary">20,300€</dd>
+                        </div>
+                        <div class="mb-9 flex flex-col gap-4">
+                          <div class="flex justify-between gap-4">
+                            <dt class="font-medium text-gray-200">Сергій Петров</dt>
+                            <dd class="text-primary">+380937887887</dd>
+                          </div>
+                          <div class="flex justify-between gap-4">
+                            <dt class="font-medium text-gray-200">Ваша ставка</dt>
+                            <dd class="text-danger text-2xl font-semibold">20,300€</dd>
+                          </div>
+                        </div>
+                        <div class="mb-6 flex justify-between gap-4">
+                          <dt class="font-medium text-gray-200">Вартість авто в Польщі</dt>
+                          <dd class="text-xl">21,360€</dd>
+                        </div>
+                        <div class="flex justify-between gap-4">
+                          <dt class="font-medium text-gray-200">Орієнтовна ціна з розмитненням</dt>
+                          <dd class="text-xl">28,284€</dd>
+                        </div>
+                      </dl>
+                    </div>
+
+                    <button class="w-full rounded-xl border border-primary bg-white px-6 py-4 text-lg font-medium text-primary" type="submit">
+                      Купити одразу за <span class="font-semibold">20,500 €</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      @@include('components/footer.html', { }) 
-      @@include('components/modal.html', { })
+      @@include('components/footer.html', { })
     </div>
-    <script
-      type="module"
-      crossorigin
-      src="./js/app.min.js"></script>
+    <script type="module" crossorigin src="./js/app.min.js"></script>
   </body>
 </html>
